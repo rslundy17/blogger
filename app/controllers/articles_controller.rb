@@ -2,6 +2,7 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.all
   end
+<<<<<<< HEAD
 
   def show
     @article = Article.find(params[:id])
@@ -33,4 +34,9 @@ class ArticlesController < ApplicationController
     flash.notice = "Article '#{@article.title}' Updated!"
     redirect_to article_path(@article)
   end
+=======
+  def show
+    @article = Article.find(params[:id])
+end
+>>>>>>> up-and-running
 end

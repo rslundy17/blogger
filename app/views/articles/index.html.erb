@@ -1,6 +1,10 @@
 <h1>All Articles</h1>
 
+<<<<<<< HEAD
 <ul id="articles">
+=======
+<ul id="Articles">
+>>>>>>> up-and-running
   <% @articles.each do |article| %>
   <li>
     <%= link_to article.title, article_path(article), class: 'article_title' %>
@@ -8,4 +12,8 @@
   <% end %>
 </ul>
 
+<<<<<<< HEAD
 <%= link_to "Create a New Article", new_article_path, class: 'new_article' %>
+=======
+<%= link_to "Create a new article", new_article_path(article), class: 'new_article' %>
+>>>>>>> up-and-running
