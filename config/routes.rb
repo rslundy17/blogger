@@ -1,11 +1,10 @@
 Blogger::Application.routes.draw do
-  resources :articles
-<<<<<<< HEAD
+  resources :articles do
+    resources :comments
+  end
 
   root to: 'articles#index'
   
-=======
->>>>>>> up-and-running
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
